@@ -1,162 +1,156 @@
-# Project-Title 
+# 📁 Projekt: Pile of Shame
 
-This project was created by the template `Web-Minimal`. Only the following GitLab features are enabled:
+## 🚀 **Project Overview**
+The **Pile of Shame** is a web application designed to help users manage and organize their backlog of items (e.g., books, games, movies) that they intend to consume or complete but haven't yet. The project consists of a **client-side frontend** built with HTML, CSS, and JavaScript, and a **server-side backend** built with Node.js, Express, and JSON Server.
 
-    ├── Issues
-    ├── Repository
-    │   ├── Merge requests
-    │   ├── Forks
-    │   ├── Git Large File Storage (LFS)
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+### Key Features:
+- **Add Items**: Users can add new items to their backlog, including details like name, description, price, date, categories, and an image.
+- **Filter Items**: Users can filter items by categories (e.g., books, games, movies).
+- **View Items**: Users can view all items in a card-based layout.
+- **Image Upload**: Users can upload images for each item, which are encoded as Base64 and stored in the database.
+- **Responsive Design**: The frontend is designed to work seamlessly on both desktop and mobile devices.
 
 ---
 
-## Editing this README
+## 🌟 **Project Structure**
+Here’s the directory structure of the project:
+Projekt/
+├── .vscode/ # VSCode settings
+├── client/ # Frontend code
+│ ├── node_modules/ # Frontend dependencies
+│ ├── public/ # Static assets (images, fonts, etc.)
+│ ├── src/ # Source code for the frontend
+│ │ ├── scripts/ # JavaScript/TypeScript files
+│ │ │ ├── event-listener.js # Handles form submission and events
+│ │ │ ├── imagePreview.js # Handles image preview functionality
+│ │ │ └── imgEncoder.js # Encodes images as Base64
+│ │ └── Styles/ # CSS files
+│ ├── index.html # Main HTML file
+│ ├── package.json # Frontend dependencies and scripts
+│ └── tailwind.config.js # Tailwind CSS configuration
+├── server/ # Backend code
+│ ├── node_modules/ # Backend dependencies
+│ ├── public/ # Static assets (e.g., JSON database)
+│ ├── src/ # Source code for the backend
+│ │ ├── controller/ # Handles HTTP requests and responses
+│ │ ├── models/ # Defines data models (e.g., Item)
+│ │ ├── routers/ # Defines API routes
+│ │ ├── services/ # Contains business logic
+│ │ └── main.ts # Entry point for the backend
+│ ├── .env # Environment variables
+│ ├── package.json # Backend dependencies and scripts
+│ └── tsconfig.json # TypeScript configuration
+├── .gitignore # Specifies files to ignore in Git
+├── .prettierrc # Prettier configuration
+├── eslint.config.mjs # ESLint configuration
+└── README.md # Project documentation (this file)
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+Copy
 
-## Suggestions for a good README
+---
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+## 🛠️ **Technologies Used**
+### Frontend:
+- **HTML**: Structure of the web pages.
+- **CSS (Tailwind)**: Styling and responsive design.
+- **JavaScript**: Client-side interactivity.
+- **TypeScript**: Optional type safety for JavaScript.
 
-## Name
+### Backend:
+- **Node.js**: Runtime environment for the server.
+- **Express**: Web framework for handling HTTP requests.
+- **JSON Server**: Simulates a REST API using a JSON file as the database.
+- **TypeScript**: Adds type safety to the backend code.
 
-Choose a self-explaining name for your project.
+---
 
-## Description
+## 🚀 **Getting Started**
+### Prerequisites:
+- Node.js (v18 or higher)
+- pnpm (package manager)
 
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+### Installation:
+1. Clone the repository:
+   ```bash
+   git clone """"
+   cd projekt
 
-## Badges
+Install dependencies for both client and server:
 
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+bash
+Copy
+cd client && pnpm install
+cd ../server && pnpm install
+Start the backend server:
 
-## Visuals
+bash
+Copy
+cd ../server
+pnpm run dev
+Start the frontend development server:
 
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+bash
+Copy
+cd ../client
+pnpm run dev
+Open the application in your browser:
 
-## Installation
+Copy
+http://localhost:3000
+📂 Directory Details
+Frontend (client/)
+src/scripts/:
 
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+event-listener.js: Handles form submission, validation, and interaction with the backend.
 
-## Usage
+imagePreview.js: Manages image preview functionality.
 
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+imgEncoder.js: Encodes uploaded images as Base64 strings.
 
-## Support
+public/: Contains static assets like images and fonts.
 
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+Styles/: Contains Tailwind CSS styles.
 
-## Roadmap
+Backend (server/)
+src/controller/:
 
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+item.controller.ts: Handles API requests for items (e.g., fetching, creating).
 
-## Contributing
+src/models/:
 
-State if you are open to contributions and what your requirements are for accepting them.
+item.ts: Defines the Item data model.
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+src/services/:
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+item.service.ts: Contains logic for filtering items by category.
 
-## Authors and acknowledgment
+jsonServer.service.ts: Handles communication with the JSON Server.
 
-Show your appreciation to those who have contributed to the project.
+public/data/:
 
-## License
+db.json: Simulates a database using a JSON file.
 
-For open source projects, say how it is licensed.
+📝 API Endpoints
+Items:
+GET /api/items: Fetch all items.
 
-## Project status
+POST /api/items: Create a new item.
 
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Filtering: Use query parameters like ?search=Game to filter items by category.
 
+🎨 Design and Styling
+The frontend uses Tailwind CSS for styling, ensuring a clean and responsive design. The layout is card-based, making it easy to view and organize items.
 
+🐛 Debugging
+Debugging logs are controlled by a global DEBUG flag. Set DEBUG = true to enable logs or DEBUG = false to suppress them.
 
-# Alaa
+🙏 Acknowledgments
+Tailwind CSS: For providing an excellent utility-first CSS framework.
 
-### Alaa Hobbys :
+Express: For simplifying backend development.
 
-1. Schach spielen 
-2. schwimmen gehen
-3. spazieren gehen
+JSON Server: For simulating a REST API with ease.
 
-### Alaa Lieblingsessen:
+Enjoy managing your Pile of Shame! 🎉
 
-1. > Pizza
-2. > Weißwurst mit Senf
-
-### interessanter Fakt :
-
-**Alaa hat einmal an einem Schachturnier teilgenommen.**
-
-# Mohammed
-
-### Mohammed Hobbys :
-
-1. PC-Spiele .
-2. schwimmen gehen
-3. joggen
-
-### Mohammed Lieblingsessen:
-
-1. > Pizza
-2. > Currywurst mit Pommes und Ketchup
-3. > Döner im Brot
-
-### interessanter Fakt :
-
-**Mohammed ist in drei verschiedenen Ländern aufgewachsen.**
-
-#
-#
-# ubungsblatt04-A3
-
-### HEADER:                              
-  [Logo]  |  [Navigation]                                   
-
-### ÜBER UNS                            
-1. > [Mo Sulaiman]   
- [Bild] Text 
-1. >  [Alaa Al Mawat]              
- [Bild] Text     
-               
-2. > [Weitere Informationen]                 
-2. >[Mehr Inhalte] 
-2. >[Kontakt]                               
-2. >[Team Beschreibung]                     
-2. >[Zusätzliche Infos]                     
-2. >[Projekte]                              
-2. >[Berichte]                              
-
-### FOOTER                            
-     Impressum  |  Kontakt  |  Datenschutzerklärung         
-
+  
