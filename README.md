@@ -37,26 +37,26 @@ The **Pile of Shame** is a web application designed to help users manage and org
    ```bash
    git clone https://github.com/your-username/projekt.git
    cd projekt
-Install dependencies for both client and server:
+2. Install dependencies for both client and server:
    ```bash
 
    cd client && pnpm install
    cd ../server && pnpm install
-```
-Start the backend server:
+
+3. Start the backend server:
    ```bash
    cd ../server
    pnpm run dev
-```
-Start the frontend development server:
+
+4. Start the frontend development server:
 ```bash
    cd ../client
    pnpm run dev
 ```
-Open the application in your browser:
-```
+5. Open the application in your browser:
+```bash
 http://localhost:3000
-```
+
 
 📂 Directory Details
 Frontend (client/)
