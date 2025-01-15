@@ -72,9 +72,8 @@ Copy
 ### Installation:
 1. Clone the repository:
    ```bash
-   git clone """"
+   git clone https://github.com/your-username/projekt.git
    cd projekt
-
 Install dependencies for both client and server:
 
 bash
@@ -144,6 +143,22 @@ The frontend uses Tailwind CSS for styling, ensuring a clean and responsive desi
 🐛 Debugging
 Debugging logs are controlled by a global DEBUG flag. Set DEBUG = true to enable logs or DEBUG = false to suppress them.
 
+🤝 Contributing
+Contributions are welcome! Please follow these steps:
+
+Fork the repository.
+
+Create a new branch (git checkout -b feature/your-feature).
+
+Commit your changes (git commit -m 'Add some feature').
+
+Push to the branch (git push origin feature/your-feature).
+
+Open a pull request.
+
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
 🙏 Acknowledgments
 Tailwind CSS: For providing an excellent utility-first CSS framework.
 
@@ -152,5 +167,3 @@ Express: For simplifying backend development.
 JSON Server: For simulating a REST API with ease.
 
 Enjoy managing your Pile of Shame! 🎉
-
-  
