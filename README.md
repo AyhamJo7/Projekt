@@ -35,7 +35,7 @@ The **Pile of Shame** is a web application designed to help users manage and org
 ### Installation:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/projekt.git
+   git clone https://gitlab.com/your-username/projekt.git
    cd projekt
 2. Install dependencies for both client and server:
    ```bash
