@@ -57,7 +57,7 @@ The **Pile of Shame** is a web application designed to help users manage and org
 ```bash
 http://localhost:3000
 
-
+```
 📂 Directory Details
 Frontend (client/)
 src/scripts/:
