@@ -58,58 +58,57 @@ The **Pile of Shame** is a web application designed to help users manage and org
    http://localhost:3000
 
 
-📂 Directory Details
-Frontend (client/)
-src/scripts/:
+## 📂 **Directory Details**
 
-event-listener.js: Handles form submission, validation, and interaction with the backend.
+### **Frontend (client/)**
+- **src/scripts/**:
+  - `event-listener.js`: Handles form submission, validation, and interaction with the backend.
+  - `imagePreview.js`: Manages image preview functionality.
+  - `imgEncoder.js`: Encodes uploaded images as Base64 strings.
+- **public/**: Contains static assets like images and fonts.
+- **Styles/**: Contains Tailwind CSS styles.
 
-imagePreview.js: Manages image preview functionality.
+### **Backend (server/)**
+- **src/controller/**:
+  - `item.controller.ts`: Handles API requests for items (e.g., fetching, creating).
+- **src/models/**:
+  - `item.ts`: Defines the Item data model.
+- **src/services/**:
+  - `item.service.ts`: Contains logic for filtering items by category.
+  - `jsonServer.service.ts`: Handles communication with the JSON Server.
+- **public/data/**:
+  - `db.json`: Simulates a database using a JSON file.
 
-imgEncoder.js: Encodes uploaded images as Base64 strings.
+---
 
-public/: Contains static assets like images and fonts.
+## 📝 **API Endpoints**
 
-Styles/: Contains Tailwind CSS styles.
+### **Items**:
+- **GET /api/items**: Fetch all items.
+- **POST /api/items**: Create a new item.
 
-Backend (server/)
-src/controller/:
+### **Filtering**:
+- Use query parameters to filter items by category:
+  ```bash
+  ?search=Game
 
-item.controller.ts: Handles API requests for items (e.g., fetching, creating).
+## 🎨 **Design and Styling**
+The frontend leverages **Tailwind CSS** for styling, ensuring a clean and responsive design. The card-based layout makes it easy for users to view and organize items intuitively.
 
-src/models/:
+---
 
-item.ts: Defines the Item data model.
+## 🐛 **Debugging**
+Debugging logs are controlled by a global `DEBUG` flag:
+- **Enable logs**: Set `DEBUG = true`.
+- **Suppress logs**: Set `DEBUG = false`.
 
-src/services/:
+---
 
-item.service.ts: Contains logic for filtering items by category.
+## 🙏 **Acknowledgments**
+- **Tailwind CSS**: For providing an excellent utility-first CSS framework.
+- **Express**: For simplifying backend development.
+- **JSON Server**: For simulating a REST API with ease.
 
-jsonServer.service.ts: Handles communication with the JSON Server.
+---
 
-public/data/:
-
-db.json: Simulates a database using a JSON file.
-
-📝 API Endpoints
-Items:
-GET /api/items: Fetch all items.
-
-POST /api/items: Create a new item.
-
-Filtering: Use query parameters like ?search=Game to filter items by category.
-
-🎨 Design and Styling
-The frontend uses Tailwind CSS for styling, ensuring a clean and responsive design. The layout is card-based, making it easy to view and organize items.
-
-🐛 Debugging
-Debugging logs are controlled by a global DEBUG flag. Set DEBUG = true to enable logs or DEBUG = false to suppress them.
-
-🙏 Acknowledgments
-Tailwind CSS: For providing an excellent utility-first CSS framework.
-
-Express: For simplifying backend development.
-
-JSON Server: For simulating a REST API with ease.
-
-Enjoy managing your Pile of Shame! 🎉
+## 🎉 **Enjoy managing your Pile of Shame!**
