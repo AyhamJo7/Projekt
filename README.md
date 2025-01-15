@@ -12,43 +12,6 @@ The **Pile of Shame** is a web application designed to help users manage and org
 
 ---
 
-## 🌟 **Project Structure**
-Here’s the directory structure of the project:
-Projekt/
-├── .vscode/ # VSCode settings
-├── client/ # Frontend code
-│ ├── node_modules/ # Frontend dependencies
-│ ├── public/ # Static assets (images, fonts, etc.)
-│ ├── src/ # Source code for the frontend
-│ │ ├── scripts/ # JavaScript/TypeScript files
-│ │ │ ├── event-listener.js # Handles form submission and events
-│ │ │ ├── imagePreview.js # Handles image preview functionality
-│ │ │ └── imgEncoder.js # Encodes images as Base64
-│ │ └── Styles/ # CSS files
-│ ├── index.html # Main HTML file
-│ ├── package.json # Frontend dependencies and scripts
-│ └── tailwind.config.js # Tailwind CSS configuration
-├── server/ # Backend code
-│ ├── node_modules/ # Backend dependencies
-│ ├── public/ # Static assets (e.g., JSON database)
-│ ├── src/ # Source code for the backend
-│ │ ├── controller/ # Handles HTTP requests and responses
-│ │ ├── models/ # Defines data models (e.g., Item)
-│ │ ├── routers/ # Defines API routes
-│ │ ├── services/ # Contains business logic
-│ │ └── main.ts # Entry point for the backend
-│ ├── .env # Environment variables
-│ ├── package.json # Backend dependencies and scripts
-│ └── tsconfig.json # TypeScript configuration
-├── .gitignore # Specifies files to ignore in Git
-├── .prettierrc # Prettier configuration
-├── eslint.config.mjs # ESLint configuration
-└── README.md # Project documentation (this file)
-
-Copy
-
----
-
 ## 🛠️ **Technologies Used**
 ### Frontend:
 - **HTML**: Structure of the web pages.
@@ -75,27 +38,26 @@ Copy
    git clone https://github.com/your-username/projekt.git
    cd projekt
 Install dependencies for both client and server:
+   ```bash
 
-bash
-Copy
-cd client && pnpm install
-cd ../server && pnpm install
+   cd client && pnpm install
+   cd ../server && pnpm install
+```
 Start the backend server:
-
-bash
-Copy
-cd ../server
-pnpm run dev
+   ```bash
+   cd ../server
+   pnpm run dev
+```
 Start the frontend development server:
-
-bash
-Copy
-cd ../client
-pnpm run dev
+```bash
+   cd ../client
+   pnpm run dev
+```
 Open the application in your browser:
-
-Copy
+```
 http://localhost:3000
+```
+
 📂 Directory Details
 Frontend (client/)
 src/scripts/:
@@ -142,22 +104,6 @@ The frontend uses Tailwind CSS for styling, ensuring a clean and responsive desi
 
 🐛 Debugging
 Debugging logs are controlled by a global DEBUG flag. Set DEBUG = true to enable logs or DEBUG = false to suppress them.
-
-🤝 Contributing
-Contributions are welcome! Please follow these steps:
-
-Fork the repository.
-
-Create a new branch (git checkout -b feature/your-feature).
-
-Commit your changes (git commit -m 'Add some feature').
-
-Push to the branch (git push origin feature/your-feature).
-
-Open a pull request.
-
-📄 License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 🙏 Acknowledgments
 Tailwind CSS: For providing an excellent utility-first CSS framework.
