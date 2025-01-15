@@ -49,15 +49,15 @@ The **Pile of Shame** is a web application designed to help users manage and org
    pnpm run dev
 
 4. Start the frontend development server:
-```bash
+   ```bash
    cd ../client
    pnpm run dev
-```
-5. Open the application in your browser:
-```bash
-http://localhost:3000
 
-```
+5. Open the application in your browser:
+   ```bash
+   http://localhost:3000
+
+
 📂 Directory Details
 Frontend (client/)
 src/scripts/:
