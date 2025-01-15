@@ -1,0 +1,16 @@
+.logo {   /*klass logo das ist in Html datia für die img ist */
+    position: absolute;/*wird verwendent ,um logo oder andere Elmente frei auf der Seite zu platzieren */
+    left:20px;
+    top: 14px;
+    height: 50px;
+    width: auto;
+    margin-right: auto;
+    margin-bottom: 15px; /* Abstand zwischen Logo und Navigation */
+    
+    
+  }
+  nav{
+    margin-left:200px;
+    display:flex;
+    gap: 10px;
+  }

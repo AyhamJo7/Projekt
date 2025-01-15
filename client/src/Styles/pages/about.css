@@ -1,0 +1,27 @@
+  /* Grid Layout für die Über uns-Sektion */
+  .grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 300px); /* Drei gleich große Spalten */
+    grid-template-rows: repeat(3, 300px); /* Drei gleich große Zeilen */
+    gap: 20px; /* Abstand zwischen den Grid-Items */
+    padding: 20px;
+  }
+  .grid-item {
+    background-color: #f2f2f2;
+    color: #050505;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+  }   
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  @media (max-width: 600px) { /* Maximalbreite von 768px, ideal für Tablets und Handys */
+    .grid-container {
+        grid-template-columns: 1fr; /* Eine Spalte */
+    }
+  }

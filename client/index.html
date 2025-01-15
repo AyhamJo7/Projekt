@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"> <!--Übungsblatt 4 Aufgae 1 Grundlage für ein responsives Layout bilden-->
+    <meta name="keywords" content="Pile of Shame, Spielübersicht" />
+    <link href="src/Styles/global.css" rel="stylesheet" />
+    <link href="src/Styles/components/header.css" rel="stylesheet" />
+    <link href="src/Styles/pages/Home.css" rel="stylesheet" />
+    <link href="src/Styles/pages/about.css" rel="stylesheet" />
+    <link href="src/tailwind.css" rel="stylesheet" />
+
+    <title>Pile of Shame</title>
+    
+  </head>
+  <body>
+    <header>
+      <img src="src/img/Pile of Shame logo.jpg " alt="Logo" class="logo"/>
+      <nav>
+        <a href="index.html" >Startseite</a>
+        <a href="src/eingabe.html" >Eingabe</a>
+        <a href="src/uebersicht.html" >Übersicht</a>
+        <a href="src/impressum.html" >Impressum</a>
+        <a href="src/about.html" >Über uns</a>
+      </nav>
+    </header>
+
+    <section><marquee scrollamount ="10"><font color="red"><h2> Willkommen bei Pile of Shame </h2></font></marquee>
+
+      <p>
+        Verwalten Sie Ihre nicht abgeschlossenen Spiele mit Leichtigkeit.
+      </p>
+    </section>
+     <!-- Flex-Container -->
+     <div class="katologie-container">
+      <div class="katologie">
+        <h3>Spiele</h3>
+        <p>Beschreibung des Spiels...</p>
+      </div>
+      <div class="katologie">
+        <h3>Bücher</h3>
+        <p>Beschreibung der Bücher...</p>
+      </div>
+      <div class="katologie">
+        <h3>Filme</h3>
+        <p>Beschreibung des Filmes...</p>
+      </div>
+    </div>
+     <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+
+    <footer>
+      <a href="src/impressum.html" ><h4>Impressum</h4></a>
+      <p >Angaben gemäß § 5 TMG:<br/>
+        Max Mustermann<br />
+        Musterstraße 1<br />
+        12345 Musterstadt
+      </p>
+      <p >
+        Kontakt: <br />
+        Telefon: 01234/56789 <br />
+        E-Mail: info@pileofshame.de
+      </p>
+    </footer>
+  </body>
+</html>

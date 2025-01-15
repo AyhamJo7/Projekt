@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+    <meta name="keywords" content="Pile of Shame, Spielübersicht" />
+    <link href="Styles/global.css" rel="stylesheet" />
+    <link href="Styles/components/header.css" rel="stylesheet" />
+    <link href="Styles/pages/Home.css" rel="stylesheet" />
+    <link href="Styles/pages/about.css" rel="stylesheet" />
+    <link href="tailwind.css" rel="stylesheet" />
+    <script type="module" src="scripts/imagePreview.js" defer></script>
+    <script type="module" src="scripts/event-listener.js"></script>
+    <title>Übersicht - Pile of Shame</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/Pile of Shame logo.jpg" alt="Logo" class="logo" />
+      <nav>
+        <a href="../index.html">Startseite</a>
+        <a href="eingabe.html">Eingabe</a>
+        <a href="uebersicht.html">Übersicht</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="about.html">Über uns</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Übersicht</h2>
+    </section>
+    <section>
+      <h5>Suche:</h5>
+      <form id="searchForm">
+        <!-- Kategorie-Auswahl (Checkboxen) -->
+        <div>
+          <label>
+            <input type="checkbox" name="categories" value="Buch" />
+            Buch
+          </label>
+          <label>
+            <input type="checkbox" name="categories" value="Game" />
+            Game
+          </label>
+          <label>
+            <input type="checkbox" name="categories" value="Brettspiel" />
+            Brettspiel
+          </label>
+          <label>
+            <input type="checkbox" name="categories" value="Film" />
+            Film
+          </label>
+          <label>
+            <input type="checkbox" name="categories" value="Serie" />
+            Serie
+          </label>
+          <label>
+            <input type="checkbox" name="categories" value="Musikalbum" />
+            Musikalbum
+          </label>
+        </div>
+
+        <!-- Suchtext -->
+        <div>
+          <input type="text" name="search" placeholder="Suchtext (z.B. Titel, Beschreibung)" />
+        </div>
+
+        <!-- Suchen Button -->
+        <button type="submit" id="searchButton">Suchen</button>
+      </form>
+    </section>
+
+    <section>
+      <h5>Suchergebnisse:</h5>
+    </section>
+    <!-- Die HTML-Datei ruft card.js auf, um die Karten zu generieren -->
+    <div id="cardsContainer"></div>
+    <script type="module" src="card.js"></script>
+
+    <footer>
+      <a href="impressum.html"><h4>Impressum</h4></a>
+      <p>
+        Angaben gemäß § 5 TMG:<br />
+        Max Mustermann<br />
+        Musterstraße 1<br />
+        12345 Musterstadt
+      </p>
+      <p>
+        Kontakt: <br />
+        Telefon: 01234/56789 <br />
+        E-Mail: info@pileofshame.de
+      </p>
+    </footer>
+  </body>
+</html>

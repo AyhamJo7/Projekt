@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES2016", 
+    "lib": ["ES2020", "DOM"], 
+    "module": "ESNext",
+    "strict": true,
+    "noEmit": false 
+  },
+  "include": ["src/**/*.ts"], 
+  "exclude": ["node_modules"] 
+}
